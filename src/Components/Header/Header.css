@@ -1,0 +1,19 @@
+.header{
+    margin: 0 auto;
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 90px;
+    border-radius: 20px;
+}
+.navigation a{
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 22px;
+    color: #000;
+    font-weight: 500;
+}
