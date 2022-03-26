@@ -24,6 +24,12 @@ const Shop = () => {
             setCart(newCart)
         }
     }
+
+    const chooseRandomItem = () => {
+        const chooseItem = cart[Math.floor(Math.random() * cart.length)]
+        const chooseOneItemId = cart.filter(p => p.id === chooseItem.id)
+        setCart(chooseOneItemId)
+    }
     return (
         <div className='shop-container'>
             <h1 className='shop-title'>Best Budget Laptop 2022</h1>
@@ -41,7 +47,7 @@ const Shop = () => {
                         }
                     </div>
                     <div className='cart-btn-container'>
-                        <button className='cart-btn'>Choose one for Me</button>
+                        <button onClick={chooseRandomItem} className='cart-btn'>Choose one for Me</button>
                         <button onClick={() => setCart([])} className='cart-btn'>Choose Again</button>
                     </div>
                 </div>
