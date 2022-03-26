@@ -1,6 +1,8 @@
+.shop-title{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.74);
+}
 .shop-container {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
     margin: 0 auto;
     width: 95%;
     background: linear-gradient(345deg, #ba70f33a, #c0242400, #e4171700, #ba70f338);
@@ -9,6 +11,12 @@
     padding: 10px;
     box-sizing: border-box;
 }
+.shop{
+
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
 .shop-container h1{
     text-align: center;
+    margin: 10px  0;
 }

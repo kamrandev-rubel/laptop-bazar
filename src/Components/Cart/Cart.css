@@ -1,0 +1,24 @@
+.delete-cart-container{
+    position: sticky;
+    top: 0;
+}
+.cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 0 5px;
+    border-radius: 40px;
+}
+
+.cart img {
+    margin-right: 5px;
+    width: 18%;
+    clip-path: circle(40%);
+    object-fit: cover;
+}
+
+.cart .delete-icon {
+    font-size: 30px;
+}

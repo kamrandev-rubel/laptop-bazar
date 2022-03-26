@@ -3,14 +3,15 @@ import './Product.css'
 import { FaShoppingCart } from 'react-icons/fa';
 
 const Product = ({ product, addHandleToCart }) => {
+    const { name, picture, price } = product;
     return (
         <div className='product'>
             <div>
 
             </div>
-            <img src={product.picture} alt="" />
-            <h3>{product.name}</h3>
-            <h4>Price: ${ product.price}</h4>
+            <img src={picture} alt="" />
+            <h3>{name}</h3>
+            <h4>Price: ${price}</h4>
             <div className='cart-btn'>
                 <button>Buy Now</button>
                 <button onClick={() => addHandleToCart(product)}>
