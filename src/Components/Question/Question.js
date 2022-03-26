@@ -2,8 +2,8 @@ import React from 'react';
 
 const Question = () => {
     return (
-        <div style={{ padding: '40px' }}>
-            <h2>What is react js? Tell us about the advantages and disadvantages of using react js.</h2><hr /><br />
+        <div style={{ padding: '40px', color: 'rgba(0, 0, 0, 0.774)'}}>
+            <h2>What is react js? Tell us about the advantages and disadvantages of using react js.</h2><hr />
             <p><b>Answer: </b> React is an open-source front-end javascript library. The library is used for web app
                 development and is designed to help developers create fast single-page applications and user interfaces.
                 It is used for handling the view layer for web and mobile apps.
@@ -19,7 +19,15 @@ const Question = () => {
                 1. Lack of Documentation, so developers do not understand easily.
                 2. It covers only the UI hence we need to use other languages to make a full application.
                 3. The high pace of development makes developer life difficult.
-                4. JSX as a barrier in react js.</p>
+                4. JSX as a barrier in react js.</p><br /><br />
+            <h2>Differences between props and state?</h2><hr />
+            <p><b>Answer: </b> Props get passed to the component similar to function parameters whereas the state is
+                managed within the component similar to variables declared within a function. Props are used by a
+                component to get data from an external environment i.e another component. States are used to manage
+                the internal environment of a component means the data changes inside the component. Props are
+                mostly used to communicate between components. We can pass from parent to child directly. For passing
+                from child to parent you need to use the concept of lifting up states. States are used for rendering
+                dynamic changes within components.</p><br /><br />
         </div>
     );
 };
