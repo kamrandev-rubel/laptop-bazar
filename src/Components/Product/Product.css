@@ -15,6 +15,24 @@
     box-shadow:  3px 5px 15px 4px rgba(173, 173, 173, 0.582);
     color: rgba(0, 0, 0, 0.747);
 }
+.rating-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 0 10px;
+    font-size: 18px;
+}
+.rating-container .discount{
+    background-color: #E54652;
+    padding: 8px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+.rating-container .heart{
+}
 .product img{
     width: 65%;
     object-fit: cover;

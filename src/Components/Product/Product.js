@@ -1,6 +1,6 @@
 import React from 'react';
 import './Product.css'
-import { FaShoppingCart } from 'react-icons/fa';
+import { FaShoppingCart, FaHeart } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
@@ -9,8 +9,9 @@ const Product = ({ product, addHandleToCart }) => {
     AOS.init();
     return (
         <div data-aos="fade-up" className='product'>
-            <div>
-
+            <div className='rating-container'>
+                <span> <span className='heart'><FaHeart /></span> 222</span>
+                <span className='discount'>30% Off</span>
             </div>
             <img src={picture} alt="" />
             <h3>{name}</h3>
