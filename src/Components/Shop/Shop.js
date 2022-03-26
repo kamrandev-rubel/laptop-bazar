@@ -17,6 +17,8 @@ const Shop = () => {
         const duplicateCart = cart.find(pd => pd.id === product.id)
         if (duplicateCart) {
             alert('hello')
+        } else if (newCart.length > 4) {
+             alert('enough')
         }
         else {
             setCart(newCart)
