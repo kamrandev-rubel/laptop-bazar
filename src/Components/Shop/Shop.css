@@ -13,6 +13,6 @@
 .product-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px 15px;
     padding: 20px;
 }
