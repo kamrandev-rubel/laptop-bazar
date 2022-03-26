@@ -1,9 +1,12 @@
 .header-container{
-    background: #000;
+    background: linear-gradient(345deg, #ba70f32f, #c554543a,#d85b5b2f,#ba70f321);
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    margin-bottom: 20px;
 }
 .header{
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -19,7 +22,7 @@
     text-decoration: none;
     margin-left: 15px;
     font-size: 22px;
-    color: #fff;
+    color: #000;
     font-weight: 500;
 }
 .navigation a:hover{
