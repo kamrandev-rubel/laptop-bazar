@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../images/logo.png'
 import './Header.css'
+import { RiShoppingCartFill } from 'react-icons/ri'
 
 const Header = () => {
     return (
@@ -8,6 +9,7 @@ const Header = () => {
             <div className='header'>
                 <div className="logo">
                     <img src={logo} alt="" />
+                    <span className='cart-icon'><RiShoppingCartFill/><sup>0</sup></span>
                 </div>
                 <div className="navigation">
                     <a href="/home">Home</a>

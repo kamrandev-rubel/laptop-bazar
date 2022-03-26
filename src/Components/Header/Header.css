@@ -28,3 +28,32 @@
 .navigation a:hover{
     color: #E54652;
 }
+
+@media only screen and (max-width: 600px) {
+    .header{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 10px;
+    }
+    .logo .cart-icon{
+        font-size: 40px;
+        color: #E54652;
+    }
+    
+    
+    .logo img {
+        width: 50px;
+    }
+    .navigation{
+        text-align: center;
+    }
+    .navigation a{
+        font-size: 5vw;
+    }
+}
