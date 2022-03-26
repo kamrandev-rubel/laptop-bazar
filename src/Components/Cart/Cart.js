@@ -7,7 +7,7 @@ const Cart = ({ cart }) => {
     const { picture, name } = cart;
     AOS.init()
     return (
-        <div data-aos="flip-up" className='cart'>
+        <div data-aos="flip-up" id='cart' className='cart'>
             <img src={picture} alt="" />
             <p>{name}</p>
             <span className='delete-icon'><MdDelete /></span>
