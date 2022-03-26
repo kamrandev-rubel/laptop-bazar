@@ -4,6 +4,7 @@ import Product from '../Product/Product';
 import './Shop.css'
 import Modal from 'react-modal';
 import { AiFillCloseCircle } from 'react-icons/ai';
+import { fakeDb, getStoreCart } from '../../utilities/FakeDb';
 // react modal custom style 
 const customStyles = {
     content: {
@@ -36,6 +37,18 @@ const Shop = () => {
             .then(data => setProducts(data))
     }, [])
 
+    useEffect(() => {
+        const storedCart = getStoreCart()
+        let saveCart = []
+        for (const id in storedCart) {
+            const addProduct = products.find(product => product.id === id)
+            if (addProduct) {
+                saveCart.push(addProduct)
+            }
+        }
+        setCart(saveCart)
+    },[products])
+
     // add to cart handler 
     const addHandleToCart = (product) => {
         const newCart = [...cart, product]
@@ -52,6 +65,7 @@ const Shop = () => {
         else {
             setCart(newCart)
         }
+        fakeDb(product.id)
     }
     // choose random item handler 
     const chooseRandomItem = () => {
@@ -64,6 +78,7 @@ const Shop = () => {
         const deleteItemFind = cart.find(item => item.id === id)
         const deleteItem = cart.filter(item => item.id !== deleteItemFind.id)
         setCart(deleteItem)
+        
     }
     // react modal open close function 
     function openModal() {
