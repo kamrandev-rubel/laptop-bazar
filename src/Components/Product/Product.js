@@ -1,11 +1,14 @@
 import React from 'react';
 import './Product.css'
 import { FaShoppingCart } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const Product = ({ product, addHandleToCart }) => {
     const { name, picture, price } = product;
+    AOS.init();
     return (
-        <div className='product'>
+        <div data-aos="fade-up" className='product'>
             <div>
 
             </div>

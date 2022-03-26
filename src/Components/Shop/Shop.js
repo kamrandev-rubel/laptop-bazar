@@ -13,8 +13,8 @@ const Shop = () => {
     }, [])
 
     const addHandleToCart = (product) => {
-        const newCart = [...cart, product]
-        setCart(newCart)
+            const newCart = [...cart, product]
+            setCart(newCart)
     }
     return (
         <div className='shop-container'>
