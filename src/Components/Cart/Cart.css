@@ -45,3 +45,36 @@
 .cart-btn-container .cart-btn:hover{
     background-color: #E54652;
 }
+
+@media only screen and (max-width: 600px) {
+    .cart-container {
+        border: 7px solid #fff;
+        border-radius: 35px;
+        padding: 20px;
+        margin: 20px 0;
+    }
+    .cart-container h2{
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .cart-container {
+        border-top: 7px solid #fff;
+        border-left: 7px solid #fff;
+        border-bottom: 7px solid #fff;
+        padding: 20px;
+        margin: 20px 0;
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px;
+        margin-left: 0;
+    }
+    .cart-btn-container{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .cart-btn-container {
+        flex-direction: row;
+    }
+}

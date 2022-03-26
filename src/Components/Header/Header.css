@@ -18,6 +18,9 @@
     border-radius: 20px;
     cursor: pointer;
 }
+.logo .cart-icon{
+    display: none;
+}
 .navigation a{
     text-decoration: none;
     margin-left: 15px;
@@ -42,10 +45,10 @@
         padding:0 10px;
     }
     .logo .cart-icon{
+        display: block;
         font-size: 40px;
         color: #E54652;
     }
-    
     
     .logo img {
         width: 50px;
@@ -56,4 +59,8 @@
     .navigation a{
         font-size: 5vw;
     }
+}
+
+@media only screen and (min-width: 600px) {
+    
 }
