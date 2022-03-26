@@ -2,7 +2,7 @@ import React from 'react';
 
 const Question = () => {
     return (
-        <div style={{ padding: '40px', color: 'rgba(0, 0, 0, 0.774)'}}>
+        <div style={{ padding: '40px', color: 'rgba(0, 0, 0, 0.774)' }}>
             <h2>What is react js? Tell us about the advantages and disadvantages of using react js.</h2><hr />
             <p><b>Answer: </b> React is an open-source front-end javascript library. The library is used for web app
                 development and is designed to help developers create fast single-page applications and user interfaces.
@@ -28,6 +28,14 @@ const Question = () => {
                 mostly used to communicate between components. We can pass from parent to child directly. For passing
                 from child to parent you need to use the concept of lifting up states. States are used for rendering
                 dynamic changes within components.</p><br /><br />
+            <h2>What is the purpose of useState? When and why will you use it?</h2><hr />
+            <p><b>Answer: </b> UseState is a react hook. Hooks make it possible to use state and mutability inside the function
+                components. The useState function is a built-in hook that can be imported from the react package. It allows
+                us to add states to our functional components. Using the useState hook inside a function component, we can
+                create a piece of state without switching to class components.
+                <br /><br />
+                useState also provides an option of passing a function as an argument if the initial state has to be
+                computed. The value returned by the function is set as the initial state</p><br /><br />
         </div>
     );
 };
