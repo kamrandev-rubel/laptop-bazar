@@ -65,3 +65,11 @@
 .cart-btn button:hover{
     background-color: #E54652;
 }
+
+@media only screen and (max-width: 600px) {
+    .product-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+}
