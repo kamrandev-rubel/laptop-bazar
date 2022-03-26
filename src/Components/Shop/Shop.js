@@ -13,8 +13,14 @@ const Shop = () => {
     }, [])
 
     const addHandleToCart = (product) => {
-            const newCart = [...cart, product]
+        const newCart = [...cart, product]
+        const duplicateCart = cart.find(pd => pd.id === product.id)
+        if (duplicateCart) {
+            alert('hello')
+        }
+        else {
             setCart(newCart)
+        }
     }
     return (
         <div className='shop-container'>
