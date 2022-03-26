@@ -53,13 +53,13 @@ const Shop = () => {
             setCart(newCart)
         }
     }
-    // choose randome item handler 
+    // choose random item handler 
     const chooseRandomItem = () => {
         const chooseItem = cart[Math.floor(Math.random() * cart.length)]
         const chooseOneItemId = cart.filter(item => item.id === chooseItem.id)
         setCart(chooseOneItemId)
     }
-    // delete icon butn handler 
+    // delete icon btn handler 
     const deleteItemIcon = (id) => {
         const deleteItemFind = cart.find(item => item.id === id)
         const deleteItem = cart.filter(item => item.id !== deleteItemFind.id)
@@ -84,7 +84,7 @@ const Shop = () => {
                     }
                 </div>
                 <div id='cart1' className='cart-container'>
-                    <h2>Seleted Items: {cart.length}</h2>
+                    <h2>Selected Items: {cart.length}</h2>
                     <div id='cart-item-container'>
                         {
                             cart.map(cart => <Cart deleteItemIcon={deleteItemIcon} key={cart.id} cart={cart} />)

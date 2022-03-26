@@ -4,7 +4,8 @@
     grid-gap: 20px 15px;
     padding: 10px;
 }
-.product{
+
+.product {
     box-sizing: border-box;
     width: 300px;
     height: fit-content;
@@ -12,17 +13,19 @@
     text-align: center;
     padding: 10px;
     border-radius: 20px;
-    box-shadow:  3px 5px 15px 4px rgba(173, 173, 173, 0.582);
+    box-shadow: 3px 5px 15px 4px rgba(173, 173, 173, 0.582);
     color: rgba(0, 0, 0, 0.747);
 }
-.rating-container{
+
+.rating-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 10px 0 10px;
     font-size: 18px;
 }
-.rating-container .discount{
+
+.rating-container .discount {
     background-color: #E54652;
     padding: 8px;
     border-radius: 20px;
@@ -31,23 +34,26 @@
     color: #fff;
     font-weight: 500;
 }
-.rating-container .heart{
-}
-.product img{
+.product img {
     width: 65%;
     object-fit: cover;
 }
-.product h3, h4{
+
+.product h3,
+h4 {
     margin: 10px 0;
 }
-.product h3{
+
+.product h3 {
     margin-top: 0;
 }
+
 .cart-btn {
     display: flex;
     justify-content: space-around;
 }
-.cart-btn button{
+
+.cart-btn button {
     display: flex;
     align-items: center;
     padding: 10px 20px;
@@ -58,21 +64,23 @@
     font-weight: 600;
     font-size: 15px;
 }
-.cart-btn .btn-text{
+
+.cart-btn .btn-text {
     margin-right: 5px;
 }
 
-.cart-btn button:hover{
+.cart-btn button:hover {
     background-color: #E54652;
 }
 
 @media only screen and (max-width: 600px) {
-    .product-container{
+    .product-container {
         display: grid;
         grid-template-columns: 1fr;
         margin: 0 auto;
     }
 }
+
 @media only screen and (min-width: 600px) {
     .product-container {
         display: grid;
@@ -80,20 +88,33 @@
         margin: 0 auto;
     }
 }
+
 @media only screen and (min-width: 768px) {
     .product-container {
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         margin: 0 auto;
     }
+
+    .cart-btn-container {
+        margin: 0 auto;
+        width: 80%;
+    }
 }
+
 @media only screen and (min-width: 992px) {
     .product-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-columns: repeat(2, 1fr);
         margin: 0 auto;
     }
+
+    .cart-btn-container {
+        margin: 0 auto;
+        width: 80%;
+    }
 }
+
 @media only screen and (min-width: 1200px) {
     .product-container {
         display: grid;

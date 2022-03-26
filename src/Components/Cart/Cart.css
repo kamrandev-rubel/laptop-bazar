@@ -66,7 +66,6 @@
         margin: 20px 0;
         border-top-left-radius: 35px;
         border-bottom-left-radius: 35px;
-        margin-left: 0;
     }
     .cart-btn-container{
         flex-direction: column;
@@ -75,6 +74,7 @@
 }
 @media only screen and (min-width: 992px) {
     .cart-btn-container {
-        flex-direction: row;
+        margin: 0 auto;
+        width: 80%;
     }
 }

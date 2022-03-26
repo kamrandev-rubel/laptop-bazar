@@ -40,6 +40,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .shop-container{
+        padding-right: 10px;
+    }
     .shop-container h1{
         font-size: 6.5vw;
     }
