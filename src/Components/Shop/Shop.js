@@ -5,6 +5,8 @@ import './Shop.css'
 import Modal from 'react-modal';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import { fakeDb, getStoreCart } from '../../utilities/FakeDb';
+
+
 // react modal custom style 
 const customStyles = {
     content: {
@@ -20,7 +22,6 @@ const customStyles = {
         display: 'flex',
         justifyContent: 'center',
         alignItems:'center'
-    
     },
 };
 Modal.setAppElement('#root')
